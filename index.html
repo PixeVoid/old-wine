@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMBERWORKS — The Power of Digital Storytelling</title>
+  <meta name="description" content="An original creative studio experience — WebGL particle phoenix, kinetic type, and immersive storytelling. Inspired by the craft of modern interactive design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follow" id="cursorFollow"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__count"><span id="counter">0</span><em>%</em></div>
+      <div class="preloader__label">Igniting the experience</div>
+      <div class="preloader__bar"><span id="progressBar"></span></div>
+    </div>
+  </div>
+
+  <!-- WebGL canvas -->
+  <canvas id="phoenix-canvas"></canvas>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#" class="nav__logo" data-magnetic>EMBER<span>WORKS</span></a>
+    <nav class="nav__links">
+      <a href="#work" data-magnetic>Work</a>
+      <a href="#studio" data-magnetic>Studio</a>
+      <a href="#contact" data-magnetic>Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta" data-magnetic>Let's talk</a>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>Creative Interactive Studio</p>
+        <h1 class="hero__title">
+          <span class="line" data-reveal><span>The power of</span></span>
+          <span class="line" data-reveal><span>digital <em>storytelling</em></span></span>
+        </h1>
+        <p class="hero__sub" data-reveal>We forge immersive brand worlds from light, motion, and code — experiences that rise, burn bright, and stay with you.</p>
+        <a href="#work" class="hero__scroll" data-magnetic>
+          <span>Scroll to explore</span>
+          <i></i>
+        </a>
+      </div>
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Immersive&nbsp;·&nbsp;WebGL&nbsp;·&nbsp;Motion&nbsp;·&nbsp;Brand&nbsp;·&nbsp;Story&nbsp;·&nbsp;</span>
+          <span>Immersive&nbsp;·&nbsp;WebGL&nbsp;·&nbsp;Motion&nbsp;·&nbsp;Brand&nbsp;·&nbsp;Story&nbsp;·&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro">
+      <p class="intro__text" data-reveal-words>
+        We are a small studio with a large obsession — building interactive experiences that feel alive. Every project begins as a spark and rises into something unforgettable.
+      </p>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+      <div class="section-head">
+        <h2 data-reveal><span>Selected Work</span></h2>
+        <span class="section-head__index" data-reveal>01 — 04</span>
+      </div>
+      <div class="work__grid">
+        <article class="card" data-magnetic-card style="--accent:#ff5a1f">
+          <div class="card__media"><div class="card__glow"></div><span class="card__num">01</span></div>
+          <div class="card__meta"><h3>Solstice</h3><p>Immersive product launch · WebGL</p></div>
+        </article>
+        <article class="card" data-magnetic-card style="--accent:#ffb020">
+          <div class="card__media"><div class="card__glow"></div><span class="card__num">02</span></div>
+          <div class="card__meta"><h3>Aurora Labs</h3><p>Brand identity · Motion system</p></div>
+        </article>
+        <article class="card" data-magnetic-card style="--accent:#ff2e63">
+          <div class="card__media"><div class="card__glow"></div><span class="card__num">03</span></div>
+          <div class="card__meta"><h3>Nightfall</h3><p>Editorial experience · 3D</p></div>
+        </article>
+        <article class="card" data-magnetic-card style="--accent:#7a5cff">
+          <div class="card__media"><div class="card__glow"></div><span class="card__num">04</span></div>
+          <div class="card__meta"><h3>Meridian</h3><p>Interactive campaign · Real-time</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Studio -->
+    <section class="studio" id="studio">
+      <div class="section-head">
+        <h2 data-reveal><span>The Studio</span></h2>
+        <span class="section-head__index" data-reveal>Who we are</span>
+      </div>
+      <div class="studio__grid">
+        <p class="studio__lead" data-reveal-words>Part design lab, part engineering shop. We sit where art direction meets the GPU — crafting work that is as considered in its typography as it is in its shaders.</p>
+        <ul class="studio__list">
+          <li data-reveal><strong>Creative Direction</strong><span>Concept · Art direction · Story</span></li>
+          <li data-reveal><strong>Interactive</strong><span>WebGL · Shaders · Real-time 3D</span></li>
+          <li data-reveal><strong>Motion</strong><span>Kinetic type · Transitions · Sound</span></li>
+          <li data-reveal><strong>Brand</strong><span>Identity · Systems · Guidelines</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <p class="contact__eyebrow" data-reveal>Have something to build?</p>
+      <a href="mailto:hello@emberworks.studio" class="contact__mail" data-magnetic>hello@emberworks.studio</a>
+      <div class="contact__socials">
+        <a href="#" data-magnetic>Instagram</a>
+        <a href="#" data-magnetic>Behance</a>
+        <a href="#" data-magnetic>LinkedIn</a>
+        <a href="#" data-magnetic>X / Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Emberworks Studio — an original demo</span>
+    <span>Built with WebGL &amp; too much coffee</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/phoenix.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
